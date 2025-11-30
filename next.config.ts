@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    turbopack: false, // полностью отключаем Turbopack
-  },
-
   webpack(config) {
     config.resolve = config.resolve || {};
     config.resolve.fallback = {
