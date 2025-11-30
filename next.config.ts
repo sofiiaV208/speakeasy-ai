@@ -1,12 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Явно включаем Webpack и отключаем Turbopack
-  experimental: {
-    webpackBuildWorker: true,
-  },
-
-  webpack: (config: any) => {
+  webpack: (config) => {
     config.resolve = config.resolve || {};
     config.resolve.fallback = {
       fs: false,
