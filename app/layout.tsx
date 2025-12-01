@@ -2,7 +2,7 @@
 
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import ChatIcon from "./components/chatIcon";
+import ChatIcon from "./components/ChatIcon";
 import Chatbot from "./components/Chatbot";
 import ChatButtons from "./components/ChatButtons";
 import { useState, type ReactNode } from "react";
